@@ -17,7 +17,6 @@ public class DiningPhilosophers {
         mutex.acquire();
         states[i] = State.HUNGRY;
         test(i);
-        System.out.println("Philosopher " + i + " picked up fork " + i);
         mutex.release();
         forks[i].acquire();
     }
